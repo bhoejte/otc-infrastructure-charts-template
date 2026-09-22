@@ -1,1 +1,10 @@
 # nginx helm chart for basic application
+replicaCount: 2
+service:
+  type: ClusterIP
+  ports:
+    http: 80
+    
+ingress:
+  enabled: true
+  hostname: nginx
